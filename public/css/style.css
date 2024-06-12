@@ -15,9 +15,13 @@
     position: fixed; 
     top: 0;
  } 
+
+ nav#position {
+  background-color: black;
+}
  .brand-name {
    text-decoration: none;
-   color: black;
+   color:white;
    font-size: 1.3rem;
    margin-left: 1rem;
  }
