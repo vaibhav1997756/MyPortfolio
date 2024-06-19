@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #c8dc71;
+    --gradient-color: linear-gradient(180deg, #d2ff00 0%, #00d2ff 100%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #16181b;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  /* Custom */
+  
+  h1 {
+    color: #dbd56e;
+    background: -webkit-linear-gradient(25deg, #eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: type 1.5s steps(90) 1.5s 1 normal both, cursor 1s step-end infinite;
+    position: relative;
+  }
+  
+  @keyframes type {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Contact Box */
+  .contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    background-color: #000;
+    max-width: max-content;
+    border-radius: 50px;
+    transform: translate(-50%, 0);
+    background-image: radial-gradient(
+        227.71% 180.23% at 90.64% 130.38%,
+        rgb(17, 20, 23) 0%,
+        rgb(55, 59, 63) 100%
+      ),
+      radial-gradient(
+        207.84% 121.69% at -5.69% 111.39%,
+        rgb(17, 20, 23) 0%,
+        rgb(55, 59, 63) 100%
+      ),
+      linear-gradient(
+        206deg,
+        rgba(123, 134, 151, 0.2) 0%,
+        rgba(25, 27, 30, 0.2) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+  
+  .contact-box a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.15s ease-in,
+      transform 0.35s cubic-bezier(1, 1.13, 0, 3.11);
+  
+    &:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+      transform: translateX(2px) rotate(-3deg);
+    }
+  }

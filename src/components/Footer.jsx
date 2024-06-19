@@ -8,7 +8,7 @@ const Footer = () => {
   <div className='ft-flex'>
     <div>
         <h3>Quick Links</h3>
-        <ul>
+        <ul className='list-style'>
        
         <li><Link to="/about-us" className='foot-line'>About Us</Link></li>
         <li><Link to="/blog" className='foot-line'>Blog</Link></li>
@@ -20,11 +20,7 @@ const Footer = () => {
   
     <div>
     <h3>Address</h3>
-        <ul>
-        <li></li>
-            
-           
-        </ul>
+     
     </div>
    
      
