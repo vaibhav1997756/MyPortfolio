@@ -12,7 +12,7 @@ const Home = () => {
     alignItems: 'center',
     color: 'white',
     fontSize: '2rem',
-    backgroundSize:'cover'
+ 
   };
 
   return (
