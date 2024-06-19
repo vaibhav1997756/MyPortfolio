@@ -33,7 +33,7 @@ const About = () => {
       <ul class="about__list">
         <li class="about__item">
           <b>My Skills Are:</b> HTML, CSS, JavaScript,
-          React, Git & GitHub, Bootstrap, Flutter &
+          Reactjs, Git & GitHub,GitLab,AWS EC2,Wordpress,Bootstrap,Material UI, 
           Figma.
         </li>
       </ul>
@@ -49,7 +49,7 @@ const About = () => {
       </div>
     </div>
   </div>
-</section>
+      </section>
     </div>
   )
 }
